@@ -1,0 +1,485 @@
+.links {
+
+  width: 100%;
+
+  max-width: var(--max-width);
+
+  margin: 0 auto;
+
+  padding: 80px 40px;
+
+  text-align: center;
+
+}
+
+
+
+.links h2 {
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(2.5rem, 5vw, 4rem);
+
+}
+
+
+
+.links h2 span {
+
+  color: var(--pink);
+
+}
+
+
+
+.links p {
+
+  margin-top: 15px;
+
+  color: var(--gray);
+
+}
+
+
+
+
+
+.links-container {
+
+  margin-top: 40px;
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 16px;
+
+}
+
+
+
+
+
+.links-container a,
+.link-button {
+
+
+  padding: 14px 30px;
+
+
+  border-radius: 999px;
+
+
+  border: 1px solid var(--border);
+
+
+  background: var(--surface);
+
+
+  transition: .3s;
+
+
+  font-family: inherit;
+
+
+  font-size: inherit;
+
+
+  color: inherit;
+
+
+  text-decoration: none;
+
+
+}
+
+
+
+
+
+.links-container a:hover,
+.link-button:hover {
+
+
+  background: var(--pink);
+
+
+  color: white;
+
+
+  border-color: var(--pink);
+
+
+  transform: translateY(-3px);
+
+
+}
+
+
+
+
+
+.link-button {
+
+  cursor: pointer;
+
+}
+
+
+
+
+
+/* ==========================
+   MODAL GERAL
+========================== */
+
+
+
+.email-overlay {
+
+
+  position: fixed;
+
+
+  inset: 0;
+
+
+  background: rgba(0,0,0,.55);
+
+
+  display: flex;
+
+
+  justify-content: center;
+
+
+  align-items: center;
+
+
+  z-index: 999;
+
+
+}
+
+
+
+
+
+/* ==========================
+   MODAL EMAIL
+========================== */
+
+
+
+.email-modal {
+
+
+  background: var(--surface);
+
+
+  width: 90%;
+
+
+  max-width: 380px;
+
+
+  padding: 35px;
+
+
+  border-radius: 20px;
+
+
+  text-align: center;
+
+
+  animation: modalShow .25s ease;
+
+
+}
+
+
+
+
+
+.email-modal h3 {
+
+
+  margin-bottom: 15px;
+
+
+  font-size: 26px;
+
+
+}
+
+
+
+
+
+.email-modal p {
+
+
+  margin: 0 0 25px;
+
+
+  color: var(--gray);
+
+
+}
+
+
+
+
+
+.email-modal button {
+
+
+  padding: 12px 25px;
+
+
+  border-radius: 999px;
+
+
+  border: none;
+
+
+  background: var(--pink);
+
+
+  color: white;
+
+
+  cursor: pointer;
+
+
+  transition: .3s;
+
+
+}
+
+
+
+
+
+.email-modal button:hover {
+
+
+  transform: translateY(-2px);
+
+
+  opacity: .9;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   MODAL CURRÍCULO
+========================== */
+
+
+
+.resume-modal {
+
+
+  background: var(--surface);
+
+
+  width: 90%;
+
+
+  max-width: 850px;
+
+
+  height: 90vh;
+
+
+  padding: 30px;
+
+
+  border-radius: 20px;
+
+
+  display: flex;
+
+
+  flex-direction: column;
+
+
+  gap: 20px;
+
+
+  animation: modalShow .25s ease;
+
+
+}
+
+
+
+
+
+.resume-modal h3 {
+
+
+  font-size: 28px;
+
+
+}
+
+
+
+
+
+.resume-modal iframe {
+
+
+  width: 100%;
+
+
+  flex: 1;
+
+
+  border: none;
+
+
+  border-radius: 12px;
+
+
+}
+
+
+
+
+
+.download-resume {
+
+
+  padding: 14px 25px;
+
+
+  border-radius: 999px;
+
+
+  background: var(--pink);
+
+
+  color: white;
+
+
+  text-align: center;
+
+
+  text-decoration: none;
+
+
+  transition: .3s;
+
+
+}
+
+
+
+
+
+.download-resume:hover {
+
+
+  transform: translateY(-2px);
+
+
+  opacity: .9;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   ANIMAÇÃO
+========================== */
+
+
+
+@keyframes modalShow {
+
+
+  from {
+
+
+    opacity: 0;
+
+
+    transform: translateY(20px);
+
+
+  }
+
+
+
+  to {
+
+
+    opacity: 1;
+
+
+    transform: translateY(0);
+
+
+  }
+
+
+}
+
+
+
+
+
+
+
+@media(max-width:900px){
+
+
+  .links {
+
+
+    padding: 60px 24px;
+
+
+  }
+
+
+
+  .resume-modal {
+
+
+    height: 85vh;
+
+
+    padding: 20px;
+
+
+  }
+
+
+
+  .resume-modal h3 {
+
+
+    font-size: 24px;
+
+
+  }
+
+
+}

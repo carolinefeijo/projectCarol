@@ -1,0 +1,195 @@
+.hero {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 60px 40px;
+}
+
+
+
+.hero-content {
+  flex: 0 0 45%;
+  transform: translateY(-150px);
+}
+
+.hero-subtitle {
+  color: var(--gray);
+
+  text-transform: uppercase;
+
+  letter-spacing: 4px;
+
+  font-size: .8rem;
+
+  font-weight: 500;
+}
+
+.hero h1 {
+  margin-top: 20px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(4rem, 8vw, 7rem);
+
+  line-height: .9;
+}
+
+.hero h1 span {
+  color: var(--pink);
+}
+
+.hero p {
+  margin-top: 28px;
+
+  max-width: 520px;
+
+  color: var(--gray);
+
+  line-height: 1.9;
+
+  font-size: 1rem;
+}
+
+.hero-skills {
+  margin-top: 36px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+}
+
+.hero-skills span {
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  padding: 11px 18px;
+
+  border-radius: 999px;
+
+  transition: .3s;
+}
+
+.hero-skills span:hover {
+  background: var(--pink);
+
+  color: white;
+
+  border-color: var(--pink);
+}
+
+.hero-buttons {
+  margin-top: 42px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 16px;
+}
+
+.hero-buttons a {
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  border-radius: 999px;
+
+  padding: 14px 26px;
+
+  transition: .3s;
+
+  font-weight: 500;
+}
+
+.hero-buttons a:first-child {
+  background: var(--black);
+
+  color: white;
+
+  border-color: var(--black);
+}
+
+.hero-buttons a:hover {
+  transform: translateY(-3px);
+}
+
+.hero-buttons a:first-child:hover {
+  background: var(--pink);
+
+  border-color: var(--pink);
+}
+
+.hero-buttons a:not(:first-child):hover {
+  color: var(--pink);
+
+  border-color: var(--pink);
+}
+
+.hero-image {
+  flex: 0 0 55%;
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+
+  max-width: 760px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse;
+
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 45px;
+
+    padding: 50px 24px;
+
+    min-height: auto;
+  }
+  
+
+  .hero-content {
+    display: flex;
+ transform: translateY(0);
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .hero-image {
+    justify-content: center;
+
+    width: 100%;
+  }
+
+  .hero-image img {
+    max-width: 500px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero p {
+    max-width: 100%;
+  }
+}

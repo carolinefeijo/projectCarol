@@ -1,0 +1,216 @@
+.technologies {
+
+  width: 100%;
+
+  max-width: var(--max-width);
+
+  margin: 0 auto;
+
+  padding: 120px 40px;
+
+}
+
+
+
+/* HEADER */
+
+.technologies-header {
+
+  max-width: 700px;
+
+  opacity: 0;
+
+  transform: translateY(40px);
+
+  transition: .8s ease;
+
+}
+
+
+.technologies-header span {
+
+  color: var(--gray);
+
+  text-transform: uppercase;
+
+  letter-spacing: 4px;
+
+  font-size: .8rem;
+
+}
+
+
+
+.technologies-header h2 {
+
+  margin-top: 20px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(3rem, 5vw, 5rem);
+
+  line-height: .95;
+
+}
+
+
+
+.technologies-header h2 span {
+
+  color: var(--pink);
+
+}
+
+
+
+
+
+/* CARDS */
+
+
+.technologies-grid {
+
+  margin-top: 70px;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+
+}
+
+
+
+.technology-card {
+
+  padding: 35px;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  border-radius: 28px;
+
+  opacity: 0;
+
+  transform: translateY(40px);
+
+  transition: .5s ease;
+
+}
+
+
+
+.technology-card h3 {
+
+  font-size: 1.3rem;
+
+  margin-bottom: 25px;
+
+}
+
+
+
+
+.technology-tags {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+}
+
+
+
+.technology-tags span {
+
+  padding: 10px 16px;
+
+  border-radius: 999px;
+
+  background: white;
+
+  border: 1px solid var(--border);
+
+  font-size: .9rem;
+
+  transition: .3s;
+
+}
+
+
+
+.technology-tags span:hover {
+
+  background: var(--pink);
+
+  color: white;
+
+  border-color: var(--pink);
+
+}
+
+
+
+
+/* ANIMAÇÃO */
+
+
+.technologies.show .technologies-header {
+
+  opacity: 1;
+
+  transform: translateY(0);
+
+}
+
+
+
+.technologies.show .technology-card {
+
+  opacity: 1;
+
+  transform: translateY(0);
+
+}
+
+
+
+.technologies.show .technology-card:nth-child(2){
+
+  transition-delay: .15s;
+
+}
+
+
+.technologies.show .technology-card:nth-child(3){
+
+  transition-delay: .3s;
+
+}
+
+
+
+
+
+@media(max-width:900px){
+
+
+  .technologies {
+
+    padding: 80px 24px;
+
+  }
+
+
+  .technologies-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+}
