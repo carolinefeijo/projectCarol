@@ -3,7 +3,6 @@ import "./styles.css";
 
 
 function Links() {
-
   const [showEmail, setShowEmail] = useState(false);
   const [showResume, setShowResume] = useState(false);
 
@@ -31,7 +30,9 @@ function Links() {
 
   return (
 
-    <section className="links">
+    <section className="links" 
+    id="contato"
+    >
 
 
       <h2>

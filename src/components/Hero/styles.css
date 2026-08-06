@@ -107,13 +107,12 @@
   transition: .3s;
 
   font-weight: 500;
+  cursor: pointer;
 }
 
 .hero-buttons a:first-child {
   background: var(--black);
-
   color: white;
-
   border-color: var(--black);
 }
 
@@ -123,7 +122,6 @@
 
 .hero-buttons a:first-child:hover {
   background: var(--pink);
-
   border-color: var(--pink);
 }
 

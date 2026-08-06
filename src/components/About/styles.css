@@ -93,16 +93,35 @@
 
   border-radius: 20px;
 
+  transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+
 }
+
+.about-highlight div:hover {
+
+  border-color: var(--pink);
+
+  transition: .3s;
+  cursor: pointer;
+
+}
+
 
 
 .about-highlight strong {
 
   display: block;
-
+cursor: pointer;
   font-size: 1.2rem;
 
 }
+
+/* // adicionar animcao hover strong  */
+.about-highlight strong:hover {
+  color: var(--pink);
+  transition: .3s;
+}
+
 
 
 .about-highlight span {
